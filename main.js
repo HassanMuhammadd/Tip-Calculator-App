@@ -21,7 +21,7 @@ document.getElementById("inputNumOfPpl").onblur = function() {
     total.textContent = `$${num2}`;
 
 }
-var amountOfDiscount;
+var amountOfDiscount = 0;
 let buttons = document.querySelectorAll(".discount");
 for (let i = 0; i < 5; i++) {
     buttons[i].onclick = function() {
