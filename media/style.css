@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+:root {
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: #C5E4E7!important;
+    overflow-x: hidden;
+}
+
+.text {
+    color: var(--Verydarkcyan)!important;
+    letter-spacing: 8px
+}
+
+.app {
+    box-shadow: 0 1px 10px 3px var(--Grayishcyan);
+    background-color: white;
+}
+
+label {
+    color: var(--Darkgrayishcyan);
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:active,
+input:focus {
+    outline-width: 2px;
+    outline-color: var(--Strongcyan)!important;
+}
+
+::placeholder {
+    color: var(--Darkgrayishcyan);
+    opacity: .5;
+    float: right;
+    margin-right: 5px;
+}
+
+input {
+    background-color: var(--Verylightgrayishcyan);
+    float: right;
+    clear: both;
+    direction: rtl;
+    padding-right: 5px;
+}
+
+.firstCol {
+    position: relative;
+}
+
+.firstCol img {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+}
+
+p {
+    color: var(--Darkgrayishcyan);
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--Verydarkcyan)!important;
+    color: white!important;
+}
+
+.active {
+    background-color: var(--Darkgrayishcyan)!important;
+}
+
+button:hover {
+    background-color: var(--Strongcyan)!important;
+    color: var(--Verydarkcyan)!important;
+    border: none!important;
+}
+
+.btnHolder {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.custom {
+    background-color: var(--Verylightgrayishcyan)!important;
+    color: var(--Darkgrayishcyan)!important;
+}
+
+.amount {
+    background-color: var(--Verydarkcyan);
+}
+
+.text h5 {
+    letter-spacing: normal;
+    font-size: 16px
+}
+
+.text .smaller {
+    font-size: 14px;
+}
+
+.tip,
+.total {
+    color: var(--Strongcyan);
+}
+
+.inputNumOfPpl {
+    outline: 2px solid red!important;
+}
+
+.inputNumOfPplError {
+    color: red;
+    font-size: 10px;
+    float: right;
+    clear: both;
+    transform: translateY(10px);
+}
+
+@media (max-width:400px) {
+    .text h5 {
+        font-size: 12px;
+    }
+    .text .smaller {
+        font-size: 10px;
+    }
+}
+
+.reset {
+    background-color: var(--Strongcyan)!important;
+    color: var(--Verydarkcyan)!important
+}
+
+.reset:hover {
+    background-color: #C5E4E7!important;
+}
